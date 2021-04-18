@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8080
+
+product:
+  url: http://challenge-api.luizalabs.com/api/product
