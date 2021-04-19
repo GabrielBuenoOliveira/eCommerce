@@ -8,12 +8,12 @@ import java.util.UUID
 
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 data class Product(
-        val price: Double,
-        val image: URL,
-        val brand: String,
+        val price: Double? = null,
+        val image: URL? = null,
+        val brand: String? = null,
         val id: UUID,
         val title: String,
-        val reviewScore: Double?
+        val reviewScore: Double? = null
 ) : Serializable
 
 data class Metadata(
